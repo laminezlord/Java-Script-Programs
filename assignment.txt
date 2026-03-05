@@ -1,0 +1,149 @@
+PART A
+1. Define a Function in JavaScript
+
+A function in JavaScript is a reusable block of code that performs a specific task when it is called.
+
+2. What is a function?
+
+A function is a piece of code written once but can be executed many times to perform an action.
+
+3. Why are functions important in programming?
+
+They reduce repetition
+
+Make code organized and reusable
+
+Make programs easier to read and maintain
+
+2. Explain the Following Terms
+a. Function Declaration
+
+A function defined using the function keyword.
+
+function greet() {
+    console.log("Hello");
+}
+b. Function Expression
+
+A function stored inside a variable.
+
+const greet = function() {
+    console.log("Hello");
+};
+c. Arrow Function
+
+A shorter way of writing functions using =>.
+
+const greet = () => {
+    console.log("Hello");
+};
+d. Anonymous Function
+
+A function without a name.
+
+setTimeout(function() {
+    console.log("Hello");
+}, 1000);
+e. Parameters
+
+Variables listed when defining a function.
+
+function add(a, b) {
+}
+
+a and b are parameters.
+
+f. Arguments
+
+Actual values passed to the function.
+
+add(5, 3);
+
+5 and 3 are arguments.
+
+g. Return Statement
+
+Used to send a value back from a function.
+
+function add(a, b) {
+    return a + b;
+}
+h. Callback Function
+
+A function passed as an argument to another function.
+
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+greet("John", function() {
+    console.log("Welcome!");
+});
+i. Hoisting
+
+In JavaScript, function declarations can be used before they are written in the code.
+
+sayHi();
+
+function sayHi() {
+    console.log("Hi");
+}
+3. Differences
+1. Function Declaration vs Function Expression
+Function Declaration	Function Expression
+Defined with function	Stored in a variable
+Hoisted	Not hoisted
+Can be called before definition	Must be defined before calling
+2. Regular Function vs Arrow Function
+Regular Function	Arrow Function
+Uses function keyword	Uses =>
+Has its own this	Inherits this
+Longer syntax	Shorter syntax
+3. Parameters vs Arguments
+Parameters	Arguments
+Variables in function definition	Actual values passed
+Example: (a, b)	Example: (5, 3)
+4. console.log() vs return
+console.log()	return
+Prints output to console	Sends value back from function
+Used for display	Used for calculations or reuse
+
+Example:
+
+function add(a,b){
+    console.log(a+b);
+}
+
+function add2(a,b){
+    return a+b;
+}
+PART B
+1. Function to Add Two Numbers (Function Declaration)
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(2,3));
+console.log(add(5,7));
+console.log(add(10,4));
+2. Multiply Two Numbers (Arrow Function)
+const multiply = (a, b) => {
+    return a * b;
+}
+
+console.log(multiply(2,3));
+console.log(multiply(4,5));
+console.log(multiply(6,7));
+3. Subtract Two Numbers (Function Expression)
+const subtract = function(a, b) {
+    console.log(a - b);
+}
+
+subtract(10,5);
+subtract(8,3);
+subtract(20,7);
+4. Anonymous Function with setTimeout
+setTimeout(function() {
+    console.log("JavaScript is powerful!");
+}, 2000);
